@@ -32,6 +32,7 @@ function identityFour<T>(val: T): T {
 	return val;
 }
 
+// we can define out own type
 
 interface Bottle{
     brand: string
@@ -55,3 +56,16 @@ const getMoreSearchProducts = <T>(products: T[]):T =>{
     const index = 4
     return products[index]
 }
+
+
+// example using promise
+
+let promise:Promise<string> = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve('resolve string data');
+    },3000);
+})
+
+promise.then((data)=>{
+    data.split('')  //it shows " Property 'split' does not exist on type 'unknown'. " if we dont specify 'Promise<string>'
+})
