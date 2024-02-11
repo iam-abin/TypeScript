@@ -1,14 +1,14 @@
-## To initialize a typescript project
+### To initialize a typescript project
 
 ``` 
 tsc --init
 ```
 
-## To execute a ts file
+### To execute a ts file
 ```
 tsc filename
 ```
-then
+then,
 
 ```
 node filename.js
