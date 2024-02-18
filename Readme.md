@@ -6,6 +6,8 @@
 
 - JavaScript and TypeScript Nightly
 
+---
+
 ### To initialize a typescript project
 
 ``` 
